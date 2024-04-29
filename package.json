@@ -1,0 +1,11 @@
+{
+  "name": "classificador-de-nivel-de-heroi",
+  "version": "1.0.0",
+  "description": "Desafio Classificador de nível de Herói",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "author": "Vinícius Santos Lima",
+  "license": "ISC"
+}
