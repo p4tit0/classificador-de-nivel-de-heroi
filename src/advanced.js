@@ -115,7 +115,7 @@ class AdvancedClassifier extends Classifier {
                 enemie.hp -= damage
 
                 if (enemie.hp <= 0) {
-                    console.log(`\x1b[32m$Você ganhou ${enemie.xp} de XP!\x1b[0m`)
+                    console.log(`\x1b[32mVocê ganhou ${enemie.xp} de XP!\x1b[0m`)
                     this._xp += enemie.xp
                     break
                 }
@@ -147,7 +147,7 @@ class AdvancedClassifier extends Classifier {
                 console.log(`\x1b[31mVocê não conseguiu escapar!\x1b[0m`)
                 await d20.roll(true)
                 r = d20.getResult()
-                damage = r - 5
+                let damage = r - 5
                 damage = damage < 0 ? 0 : damage
                 console.log(`\x1b[31mVocê sofreu ${damage} de dano!\x1b[0m`)
                 this.#hp -= damage
